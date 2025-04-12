@@ -125,7 +125,7 @@ export default function Home() {
                         <h3>Our Clients</h3>
                         <p>Empowering Partnerships, Driving Success</p>
                     </div>
-                    <div className="clients-section">
+                    <div className="clients-section over-hidden">
                         <div className="client-grid" data-animate="zoom-out">
                             <div className="item">
                                 <Image src='/assets/images/clients/client1.png' alt='client' width={150} height={84} />
@@ -170,7 +170,7 @@ export default function Home() {
                         <h3>Why Choose us</h3>
                         <p>Empowering Partnerships, Driving Success</p>
                     </div>
-                    <div className="why-section">
+                    <div className="why-section over-hidden">
                         <div className="why-grid" data-animate="zoom-out">
                             <div className="item">
                                 <img src="/assets/icon/top-right.svg" className='svg' alt="top right arrow" />
