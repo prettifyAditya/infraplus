@@ -34,7 +34,7 @@ export default function Footer() {
                 </div>
                 <div className="colB">
                     <button className="enquire-btn">Enquire Now</button>
-                    <Link href="" className="white-border">Whatsapp</Link>
+                    <Link href="javascript:;" className="white-border">Whatsapp</Link>
                 </div>
             </div>
             <div className="main-footer">
@@ -45,22 +45,22 @@ export default function Footer() {
                     <div className="list">
                         <h6>Company</h6>
                         <ul>
-                            <li><Link href="#">About Us</Link></li>
-                            <li><Link href="#">Projects</Link></li>
-                            <li><Link href="#">Services</Link></li>
-                            <li><Link href="#">Contact Us</Link></li>
-                            <li><Link href="#">Terms & Conditions</Link></li>
-                            <li><Link href="#">Policy of use</Link></li>
+                            <li><Link href="/about-us">About Us</Link></li>
+                            <li><Link href="/projects">Projects</Link></li>
+                            <li><Link href="/services">Services</Link></li>
+                            <li><Link href="/contact-us">Contact Us</Link></li>
+                            <li><Link href="javascript:;">Terms & Conditions</Link></li>
+                            <li><Link href="/privacy-policy">Policy of use</Link></li>
                         </ul>
                     </div>
                     <div className="list">
                         <h6>Sectors</h6>
                         <ul>
-                            <li><Link href="#">Water & Sanitation</Link></li>
-                            <li><Link href="#">Roads & Highways</Link></li>
-                            <li><Link href="#">Rail & Metro</Link></li>
-                            <li><Link href="#">Energy</Link></li>
-                            <li><Link href="#">Industrial Parks/ SEZ</Link></li>
+                            <li><Link href="/sector-details">Water & Sanitation</Link></li>
+                            <li><Link href="/sector-details">Roads & Highways</Link></li>
+                            <li><Link href="/sector-details">Rail & Metro</Link></li>
+                            <li><Link href="/sector-details">Energy</Link></li>
+                            <li><Link href="/sector-details">Industrial Parks/ SEZ</Link></li>
                         </ul>
                     </div>
                     <div className="list">
