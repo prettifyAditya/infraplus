@@ -246,7 +246,7 @@ export default function Home() {
                         <figcaption>
                             <h3>Join our team</h3>  
                             <p>Join the Journey, Shape the Future</p>
-                            <Link href="#" className='btn btn-white'>Join Now</Link>
+                            <Link href="/careers" className='btn btn-white'>Join Now</Link>
                         </figcaption>
                     </div>
                     <div className="item-md center-item">
@@ -256,7 +256,7 @@ export default function Home() {
                         <figcaption>
                             <h3>let’s Collaborate</h3>  
                             <p>Bringing Ideas Together, Building Success</p>
-                            <Link href="#" className='btn btn-white'>Read More</Link>
+                            <Link href="/contact-us" className='btn btn-white'>Contact Us</Link>
                         </figcaption>
                     </div>
                 </div>
