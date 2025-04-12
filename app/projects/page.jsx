@@ -152,7 +152,7 @@ export default function ProjectPage() {
             <section>
               <div className="projects-secA sec-pad">
                   <div className="container">
-                      <div className="listing-grid">
+                      <div className="listing-grid" data-animate="zoom-out">
                          <ProjectListing 
                          title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
                          desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}

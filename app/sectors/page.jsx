@@ -70,7 +70,7 @@ export default function Sectors() {
                             <li>Lake / Water body Restorations</li>
                         </ul>
                         <div className="btn-wrapper">
-                            <Link href="/services" className='btn'>Read More</Link>
+                            <Link href="/sector-details" className='btn'>Read More</Link>
                             <a href="javascript:;" className='btn border-black'>Enquire Now</a>
                         </div>
                     </figcaption>
@@ -90,7 +90,7 @@ export default function Sectors() {
                             <li>Lake / Water body Restorations</li>
                         </ul>
                         <div className="btn-wrapper">
-                            <Link href="/services" className='btn'>Read More</Link>
+                            <Link href="/sector-details" className='btn'>Read More</Link>
                             <a href="javascript:;" className='btn border-black'>Enquire Now</a>
                         </div>
                     </figcaption>
@@ -110,7 +110,7 @@ export default function Sectors() {
                             <li>Lake / Water body Restorations</li>
                         </ul>
                         <div className="btn-wrapper">
-                            <Link href="/services" className='btn'>Read More</Link>
+                            <Link href="/sector-details" className='btn'>Read More</Link>
                             <a href="javascript:;" className='btn border-black'>Enquire Now</a>
                         </div>
                     </figcaption>
@@ -130,7 +130,7 @@ export default function Sectors() {
                             <li>Lake / Water body Restorations</li>
                         </ul>
                         <div className="btn-wrapper">
-                            <Link href="/services" className='btn'>Read More</Link>
+                            <Link href="/sector-details" className='btn'>Read More</Link>
                             <a href="javascript:;" className='btn border-black'>Enquire Now</a>
                         </div>
                     </figcaption>
@@ -150,7 +150,7 @@ export default function Sectors() {
                             <li>Lake / Water body Restorations</li>
                         </ul>
                         <div className="btn-wrapper">
-                            <Link href="/services" className='btn'>Read More</Link>
+                            <Link href="/sector-details" className='btn'>Read More</Link>
                             <a href="javascript:;" className='btn border-black'>Enquire Now</a>
                         </div>
                     </figcaption>
@@ -170,7 +170,7 @@ export default function Sectors() {
                             <li>Lake / Water body Restorations</li>
                         </ul>
                         <div className="btn-wrapper">
-                            <Link href="/services" className='btn'>Read More</Link>
+                            <Link href="/sector-details" className='btn'>Read More</Link>
                             <a href="javascript:;" className='btn border-black'>Enquire Now</a>
                         </div>
                     </figcaption>
@@ -190,7 +190,7 @@ export default function Sectors() {
                             <li>Lake / Water body Restorations</li>
                         </ul>
                         <div className="btn-wrapper">
-                            <Link href="/services" className='btn'>Read More</Link>
+                            <Link href="/sector-details" className='btn'>Read More</Link>
                             <a href="javascript:;" className='btn border-black'>Enquire Now</a>
                         </div>
                     </figcaption>
@@ -210,7 +210,7 @@ export default function Sectors() {
                             <li>Lake / Water body Restorations</li>
                         </ul>
                         <div className="btn-wrapper">
-                            <Link href="/services" className='btn'>Read More</Link>
+                            <Link href="/sector-details" className='btn'>Read More</Link>
                             <a href="javascript:;" className='btn border-black'>Enquire Now</a>
                         </div>
                     </figcaption>

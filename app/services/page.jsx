@@ -40,13 +40,13 @@ export default function Services() {
             />
         <section className="border-sec">
             <div className="container">
-                <div className="services-secA">
+                <div className="services-secA" data-animate="fade-up">
                     <div className="heading">
                         <p>Infraplus provides consulting services from the stage of conceptualization to planning, design and detailed engineering of diverse discipline projects. Focusing on the need of clients, Infraplus has expanded its activities in diversified fields to develop areas of complementary expertise and strengthen firm’s capabilities.</p>
                     </div>
                 </div>
                 <div className="services-secB sec-pad">
-                    <div className="step-count">
+                    <div className="step-count" data-animate="fade-right">
                         <div className="heading">
                             <span className="number">01</span>
                             <h6>Planning</h6>
@@ -76,7 +76,7 @@ export default function Services() {
                             </div>
                         </div>
                     </div>
-                    <div className="step-count">
+                    <div className="step-count" data-animate="fade-right">
                         <div className="heading">
                             <span className="number">02</span>
                             <h6>Design</h6>
@@ -106,7 +106,7 @@ export default function Services() {
                             </div>
                         </div>
                     </div>
-                    <div className="step-count">
+                    <div className="step-count" data-animate="fade-right">
                         <div className="heading">
                             <span className="number">03</span>
                             <h6>Project Management</h6>

@@ -36,7 +36,7 @@ export default function Aboutus() {
             <section>
                 <div className="about-secA sec-pad">
                     <div className="container">
-                        <div className="heading">
+                        <div className="heading" data-animate="fade-up">
                             <div className="icon">
                                 <Image src="/assets/icon/quote.svg" alt="quote" width={51} height={36} />
                             </div>
@@ -47,13 +47,13 @@ export default function Aboutus() {
             </section>
             <section>
                 <div className="about-secB sec-pad">
-                    <div className="container flex">
-                        <div className="colA">
+                    <div className="container flex over-hidden">
+                        <div className="colA" data-animate="fade-right">
                             <div className="video-icon">
                                 <video src="/assets/video/about-video.mp4" width={407} height={407} autoPlay muted loop playsInline></video>
                             </div>
                         </div>
-                        <div className="colB">
+                        <div className="colB" data-animate="fade-left">
                             <p><strong>Infraplus Consulting Pvt. Ltd.</strong> is an IS0 9001: 2015 certified young and dynamic design and project management focused company, anchored by a group of professionals having experience across various sectors of development and investments. We, as an advisory firm have provided services related to Feasibility studies, design / detailed engineering and project management in various projects across sectors like Transportation & Logistics, Roads & Highways, Railways, SEZs, Industrial Parks, Integrated Developments, Water & Wastewater and Waste Management.</p>
                             <div className="counter-wrapper">
                                 <div className="count-info-wrap">
@@ -85,7 +85,7 @@ export default function Aboutus() {
             <section>
                 <div className="about-secC sec-pad gray-bg">
                     <div className="container">
-                        <div className="heading text-center">
+                        <div className="heading text-center" data-animate="fade-up">
                             <h3>10 years of excellence</h3>
                         </div>
                         <AboutJourney />
@@ -95,7 +95,7 @@ export default function Aboutus() {
             <section>
             <div className="home-secG sec-pad">
                 <div className="container">
-                    <div className="heading text-center">
+                    <div className="heading text-center" data-animate="fade-up">
                         <h3>Global Reach</h3>
                         <p>Team Infraplus has global experience of working in more than 20 countries inAfrica, Middle East and Southeast Asia.</p>
                     </div>
@@ -128,12 +128,12 @@ export default function Aboutus() {
         </section>
         <section>
             <div className="about-secD sec-pad">
-                <div className="container flex">
-                    <div className="colA">
+                <div className="container flex over-hidden">
+                    <div className="colA" data-animate="fade-right">
                         <h3>What we focus and strive for</h3>
                         <button className="btn solid-white">Enquire Now</button>
                     </div>
-                    <div className="colB grid">
+                    <div className="colB grid" data-animate="fade-left">
                         <div className="item flex">
                             <Image src="/assets/icon/topright-white.svg" alt="arrow" width={45} height={45}></Image>
                             <div className="content">
@@ -168,12 +168,12 @@ export default function Aboutus() {
         </section>
         <section>
             <div className="about-secE sec-pad">
-                <div className="container flex">
-                    <div className="colA">
+                <div className="container flex over-hidden">
+                    <div className="colA" data-animate="fade-down">
                         <h3>Our Leadership</h3>
                         <p>We began from a small team, but now we are a force of 1000+ visionaries who believe in our mission</p>
                     </div>
-                    <div className="colB grid">
+                    <div className="colB grid" data-animate="fade-left">
                         <div className="profile-item">
                             <figure>
                                 <Image src="/assets/images/about/profile1.jpg" alt="profile" width="314" height="290"></Image>

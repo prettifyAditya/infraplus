@@ -58,8 +58,8 @@ export default function ServiceDetails() {
             />
             <section>
                 <div className="sector-detailA service-detailA sec-pad">
-                    <div className="container flex">
-                        <div className="colA">
+                    <div className="container flex over-hidden">
+                        <div className="colA" data-animate="fade-right">
                             <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper porttitor commodo vel purus commodo. Pellentesque accumsan enim risus quisque viverra mattis in sed. Fringilla enim eu praesent scelerisque. Lectus diam arcu velit cursus. Viverra dis tincidunt duis bibendum interdum nulla maecenas sed. Porta dictum nec vitae luctus. Adipiscing fermentum porta lobortis mauris. Porttitor tellus elit diam quisque tempor varius consequat fusce. Placerat ut turpis nulla tristique pretium tortor maecenas cursus.</p>
                             <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper porttitor commodo vel purus commodo. Pellentesque accumsan enim risus quisque viverra mattis in sed. Fringilla enim eu praesent scelerisque. Lectus diam arcu velit cursus. Viverra dis tincidunt duis bibendum interdum nulla maecenas sed. Porta dictum nec vitae luctus. Adipiscing fermentum porta lobortis mauris. Porttitor tellus elit diam quisque tempor varius consequat fusce. Placerat ut turpis nulla tristique pretium tortor maecenas cursus.</p>
                             <p>Lorem ipsum dolor sit amet consectetur. Ullamcorper porttitor commodo vel purus commodo. Pellentesque accumsan enim risus quisque viverra mattis in sed. Fringilla enim eu praesent scelerisque. Lectus diam arcu velit cursus. Viverra dis tincidunt duis bibendum interdum nulla maecenas sed. Porta dictum nec vitae luctus. Adipiscing fermentum porta lobortis mauris. Porttitor tellus elit diam quisque tempor varius consequat fusce. Placerat ut turpis nulla tristique pretium tortor maecenas cursus.</p>
@@ -73,7 +73,7 @@ export default function ServiceDetails() {
                                 <li>Full time Construction Supervision and bill certification</li>
                             </ul>
                         </div>
-                        <div className="colB">
+                        <div className="colB" data-animate="fade-left">
                             <div className="form-wrapper">
                                 <div className="title">
                                     <h6>Talk to Our Experts</h6>
