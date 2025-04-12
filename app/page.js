@@ -158,7 +158,7 @@ export default function Home() {
                                 <Image src='/assets/images/clients/client10.png' alt='client' width={150} height={84} />
                             </div>
                         </div>
-                        <Link href="#" className='btn border-black'>View all clients</Link>
+                        <Link href="javascript:;" className='btn border-black'>View all clients</Link>
                     </div>
                 </div>
             </div>
