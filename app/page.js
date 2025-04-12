@@ -96,7 +96,7 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            <Link href="#" className='btn border-black'>Read more</Link>
+                            <Link href="/about-us" className='btn border-black'>Read more</Link>
                         </div>
                         <div className="colB" data-animate="fade-left">
                             <div className="video-icon">
