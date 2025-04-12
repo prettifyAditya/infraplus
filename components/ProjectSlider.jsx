@@ -6,6 +6,7 @@ import "../styles/components/projectslider.css"
 import "swiper/css/navigation"; 
 import { Navigation } from "swiper/modules"
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 export default function ProjectSlider() {
     const swiperRef = useRef(null);
@@ -36,6 +37,7 @@ export default function ProjectSlider() {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
             <SwiperSlide>
+                <Link href="/project-details">
                 <div className="item-md">
                     <figure>
                         <img src="/assets/images/home/project1.jpg"></img>
@@ -44,8 +46,10 @@ export default function ProjectSlider() {
                         <h6>Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone, Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria</h6>
                     </figcaption>
                 </div>
+                </Link>
             </SwiperSlide>
             <SwiperSlide>
+                <Link href="/project-details">
                 <div className="item-md">
                     <figure>
                         <img src="/assets/images/home/project2.jpg"></img>
@@ -54,8 +58,10 @@ export default function ProjectSlider() {
                         <h6>Design Review, Project management and Construction Supervision of BPCL Gas Pipeline Shifting work for NHAI in NCR (Dwarka Expressway)</h6>
                     </figcaption>
                 </div>
+                </Link>
             </SwiperSlide>
             <SwiperSlide>
+            <Link href="/project-details">
                 <div className="item-md">
                     <figure>
                         <img src="/assets/images/home/project1.jpg"></img>
@@ -64,8 +70,10 @@ export default function ProjectSlider() {
                         <h6>Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone, Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria</h6>
                     </figcaption>
                 </div>
+                </Link>
             </SwiperSlide>
             <SwiperSlide>
+            <Link href="/project-details">
                 <div className="item-md">
                     <figure>
                         <img src="/assets/images/home/project1.jpg"></img>
@@ -74,6 +82,7 @@ export default function ProjectSlider() {
                         <h6>Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone, Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria</h6>
                     </figcaption>
                 </div>
+                </Link>
             </SwiperSlide>
         </Swiper>
         </div>
