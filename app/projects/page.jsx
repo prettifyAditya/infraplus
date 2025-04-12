@@ -58,14 +58,16 @@ const customStyles = {
 }
 
 const options = [
-  { value: "option 1", label: "option 1"},
-  { value: "option 2", label: "option 2"},
-  { value: "option 3", label: "option 3"},
+  { value: "India", label: "India"},
+  { value: "Nigeria", label: "Nigeria"},
+  { value: "Africa", label: "Africa"},
+  { value: "Oman", label: "Oman"},
 ]
 const options2 = [
-  { value: "option 1", label: "option 1"},
-  { value: "option 2", label: "option 2"},
-  { value: "option 3", label: "option 3"},
+  { value: "Water & Sanitation", label: "Water & Sanitation"},
+  { value: "Roads & Highways", label: "Roads & Highways"},
+  { value: "Rail & Metro", label: "Rail & Metro"},
+  { value: "Energy", label: "Energy"},
 ]
 
 export default function ProjectPage() {
@@ -121,7 +123,7 @@ export default function ProjectPage() {
                 <div className="filter-strip">
                     <div className="filters">
                     <Select 
-                        placeholder="Apply for"
+                        placeholder="Location"
                         options={options}
                         value={selectedOption}
                         onChange={setSelectedOption}
@@ -132,7 +134,7 @@ export default function ProjectPage() {
                       ></Select>
                       {selectedOption && <label>{selectedOption.label}</label>}
                     <Select 
-                        placeholder="Apply for"
+                        placeholder="Sectors"
                         options={options2}
                         value={selectedOption2}
                         onChange={setSelectedOption2}

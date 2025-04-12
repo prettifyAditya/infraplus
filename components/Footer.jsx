@@ -34,7 +34,8 @@ export default function Footer() {
                 </div>
                 <div className="colB">
                     <button className="enquire-btn">Enquire Now</button>
-                    <a href="/wa.link/o3wjjo" target="_blank" className="white-border">Whatsapp</a>
+                    {/* <a href="/wa.link/o3wjjo" target="_blank" className="white-border">Whatsapp</a> */}
+                    <a href="https://api.whatsapp.com/send?phone=919810632693&text=Hello%20Team%20Infraplus%20Consulting!%20I%20am%20interested%20in%20one%20of%20your%20projects.%20Please%20touch%20base%20with%20me." target="_blank" className="white-border">Whatsapp</a>
                 </div>
             </div>
             <div className="main-footer">
