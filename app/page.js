@@ -238,7 +238,7 @@ export default function Home() {
         </section>
         <section>
             <div className="home-secH">
-                <div className="call-to-action">
+                <div className="call-to-action over-hidden">
                     <div className="item-md center-item">
                         <figure>
                             <img src="/assets/images/home/callto1.jpg" alt="Join our team" />
