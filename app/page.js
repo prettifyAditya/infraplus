@@ -9,6 +9,7 @@ import HomeText from '@/components/HomeText';
 import { useEffect } from 'react';
 import enterView from 'enter-view';
 import '../public/assets/css/animate.css'
+import WorldMap from '@/components/WorldMap';
 
 export default function Home() {
     useEffect(() => {
@@ -209,30 +210,31 @@ export default function Home() {
                         <h3>Global Reach</h3>
                         <p>Team Infraplus has global experience of working in more than 20 countries inAfrica, Middle East and Southeast Asia.</p>
                     </div>
-                    <div className="global-container">
+                    <WorldMap />
+                    {/* <div className="global-container">
                         <img src="/assets/images/home/map.png" className='map-image' alt="location map" />
                         <div className="pointer india">
                             <span>India</span>
                         </div>
-                        {/* <div className="pointer">
-                            <span>India</span>
+                        <div className="pointer asia">
+                            <span>asia</span>
                         </div>
-                        <div className="pointer">
-                            <span>India</span>
+                        <div className="pointer russia">
+                            <span>Russia</span>
                         </div>
-                        <div className="pointer">
-                            <span>India</span>
+                        <div className="pointer europe">
+                            <span>Europe</span>
                         </div>
-                        <div className="pointer">
-                            <span>India</span>
+                        <div className="pointer africa">
+                            <span>Africa</span>
                         </div>
-                        <div className="pointer">
-                            <span>India</span>
+                        <div className="pointer south-amr">
+                            <span>South America</span>
                         </div>
-                        <div className="pointer">
-                            <span>India</span>
-                        </div> */}
-                    </div>
+                        <div className="pointer north-amr">
+                            <span>North America</span>
+                        </div>
+                    </div> */}
                 </div>
             </div>
         </section>

@@ -231,63 +231,82 @@
         p
             max-width: 455px
             margin: 0 auto
-    .global-container
-        position: relative
-        max-width: 100%
-        text-align: center
-        .map-image
-            width: 100%
-            height: auto
-            object-fit: none
-        .pointer
-            position: absolute
-            width: 12px
-            height: 12px
-            background-color: var(--primary)
-            border-radius: 50%
-            border: 1px solid var(--primary)
-            cursor: pointer
-            transform: translate(-50%, -50%)
-            &:hover
-                span
-                    opacity: 1
-            &::before
-                content: ""
-                position: absolute
-                left: -12px
-                bottom: -11px
-                width: 21px
-                padding: 15px
-                height: 20px
-                border-radius: 50%
-                border: 2px solid var(--primary)
-            &.india
-                right: 32%
-                top: 40%
-            span
-                background-color: var(--primary)
-                padding: 4px 20px
-                border-radius: 5px
-                color: $white
-                position: absolute
-                bottom: 100%
-                left: -100%
-                transform: translate(-30%, -80%)
-                opacity: 0
-                transition: .5s ease
-                --triangle: 10px
-                &::before
-                    content: ""
-                    display: block
-                    position: absolute
-                    top: calc(100% - var(--triangle) / 2)
-                    left: 50%
-                    translate: -50% 0
-                    width: var(--triangle)
-                    height: var(--triangle)
-                    background: var(--primary)
-                    transform: rotate(45deg)
-                    z-index: -1
+    // .global-container
+    //     position: relative
+    //     max-width: 100%
+    //     text-align: center
+    //     .map-image
+    //         width: 100%
+    //         height: auto
+    //         object-fit: none
+    //     .pointer
+    //         position: absolute
+    //         width: 12px
+    //         height: 12px
+    //         background-color: var(--primary)
+    //         border-radius: 50%
+    //         border: 1px solid var(--primary)
+    //         cursor: pointer
+    //         transform: translate(-50%, -50%)
+    //         animation: blink 2s forwards .2s infinite
+    //         &:hover
+    //             span
+    //                 opacity: 1
+    //         &::before
+    //             content: ""
+    //             position: absolute
+    //             left: -12px
+    //             bottom: -11px
+    //             width: 21px
+    //             padding: 15px
+    //             height: 20px
+    //             border-radius: 50%
+    //             border: 2px solid var(--primary)
+    //         &.india
+    //             right: 32%
+    //             top: 40%
+    //         &.asia
+    //             right: 22%
+    //             top: 27%
+    //         &.russia
+    //             right: 40%
+    //             top: 22%
+    //         &.europe
+    //             right: 45%
+    //             top: 40%
+    //         &.africa
+    //             right: 42%
+    //             top: 60%
+    //         &.south-amr
+    //             bottom: 36%
+    //             left: 35%
+    //         &.north-amr
+    //             top: 34%
+    //             left: 28%
+    //         span
+    //             background-color: var(--primary)
+    //             padding: 4px 20px
+    //             border-radius: 5px
+    //             color: $white
+    //             position: absolute
+    //             bottom: 100%
+    //             left: -100%
+    //             transform: translate(-30%, -80%)
+    //             opacity: 0
+    //             transition: .5s ease
+    //             --triangle: 10px
+    //             &::before
+    //                 content: ""
+    //                 display: block
+    //                 position: absolute
+    //                 top: calc(100% - var(--triangle) / 2)
+    //                 left: 50%
+    //                 translate: -50% 0
+    //                 width: var(--triangle)
+    //                 height: var(--triangle)
+    //                 background: var(--primary)
+    //                 transform: rotate(45deg)
+    //                 z-index: -1
 
 .home-secH
     .call-to-action

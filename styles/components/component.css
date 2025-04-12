@@ -153,4 +153,95 @@
 .page-not-found-container .not-found p {
   color: var(--black);
   padding-bottom: 10px;
+}
+
+.global-container {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+}
+.global-container .map-image {
+  width: 100%;
+  height: auto;
+  -o-object-fit: none;
+     object-fit: none;
+}
+.global-container .pointer {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  animation: blink 2s forwards 0.2s infinite;
+}
+.global-container .pointer:hover span {
+  opacity: 1;
+}
+.global-container .pointer::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  bottom: -11px;
+  width: 21px;
+  padding: 15px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+}
+.global-container .pointer.point1 {
+  right: 32%;
+  top: 40%;
+}
+.global-container .pointer.point2 {
+  right: 22%;
+  top: 27%;
+}
+.global-container .pointer.point3 {
+  right: 40%;
+  top: 22%;
+}
+.global-container .pointer.point4 {
+  right: 45%;
+  top: 40%;
+}
+.global-container .pointer.point5 {
+  right: 42%;
+  top: 60%;
+}
+.global-container .pointer.point6 {
+  bottom: 36%;
+  left: 35%;
+}
+.global-container .pointer.point7 {
+  top: 34%;
+  left: 28%;
+}
+.global-container .pointer span {
+  background-color: var(--primary);
+  padding: 4px 20px;
+  border-radius: 5px;
+  color: var(--white);
+  position: absolute;
+  bottom: 100%;
+  left: -100%;
+  transform: translate(-30%, -80%);
+  opacity: 0;
+  transition: 0.5s ease;
+  --triangle: 10px;
+}
+.global-container .pointer span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(100% - var(--triangle) / 2);
+  left: 50%;
+  translate: -50% 0;
+  width: var(--triangle);
+  height: var(--triangle);
+  background: var(--primary);
+  transform: rotate(45deg);
+  z-index: -1;
 }/*# sourceMappingURL=component.css.map */

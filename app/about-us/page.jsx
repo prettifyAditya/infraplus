@@ -7,6 +7,7 @@ import AboutJourney from "@/components/AboutJourney"
 import { useEffect } from 'react';
 import enterView from 'enter-view';
 import '../../public/assets/css/animate.css'
+import WorldMap from "@/components/WorldMap"
 
 export default function Aboutus() {
     useEffect(() => {
@@ -99,30 +100,7 @@ export default function Aboutus() {
                         <h3>Global Reach</h3>
                         <p>Team Infraplus has global experience of working in more than 20 countries inAfrica, Middle East and Southeast Asia.</p>
                     </div>
-                    <div className="global-container">
-                        <img src="/assets/images/home/map.png" className='map-image' alt="location map" />
-                        <div className="pointer india">
-                            <span>India</span>
-                        </div>
-                        {/* <div className="pointer">
-                            <span>India</span>
-                        </div>
-                        <div className="pointer">
-                            <span>India</span>
-                        </div>
-                        <div className="pointer">
-                            <span>India</span>
-                        </div>
-                        <div className="pointer">
-                            <span>India</span>
-                        </div>
-                        <div className="pointer">
-                            <span>India</span>
-                        </div>
-                        <div className="pointer">
-                            <span>India</span>
-                        </div> */}
-                    </div>
+                    <WorldMap />
                 </div>
             </div>
         </section>

@@ -70,6 +70,11 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  background: var(--gradient-a);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "ttrg-bd";
+  margin-top: 5px;
 }
 .contact-secA .flex .colB .contact-grid .contact-col a:hover {
   color: var(--black);

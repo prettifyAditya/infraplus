@@ -44,7 +44,7 @@ const customStyles = {
       background: state.isFocused ? "var(--gradient-a)" : "#fff",
       marginBottom: "5px",
       fontSize: "16px",
-      padding: "6px 10px",
+      padding: "3px 10px",
       color: state.isFocused ? "#fff" : "#000",
       "&:hover": {
         borderColor: "#000",
@@ -54,6 +54,7 @@ const customStyles = {
   menu: (base) => ({
   ...base,
   zIndex: 10,
+  width: "200px"
   })
 }
 
