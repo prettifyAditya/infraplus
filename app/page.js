@@ -121,12 +121,12 @@ export default function Home() {
         <section>
             <div className="home-secE sec-pad">
                 <div className="container">
-                    <div className="heading text-center">
+                    <div className="heading text-center" data-animate="fade-up">
                         <h3>Our Clients</h3>
                         <p>Empowering Partnerships, Driving Success</p>
                     </div>
                     <div className="clients-section">
-                        <div className="client-grid">
+                        <div className="client-grid" data-animate="zoom-out">
                             <div className="item">
                                 <Image src='/assets/images/clients/client1.png' alt='client' width={150} height={84} />
                             </div>
@@ -166,12 +166,12 @@ export default function Home() {
         <section>
             <div className="home-secF sec-pad gray-bg">
                 <div className="container">
-                    <div className="heading text-center">
+                    <div className="heading text-center" data-animate="fade-up">
                         <h3>Why Choose us</h3>
                         <p>Empowering Partnerships, Driving Success</p>
                     </div>
                     <div className="why-section">
-                        <div className="why-grid">
+                        <div className="why-grid" data-animate="zoom-out">
                             <div className="item">
                                 <img src="/assets/icon/top-right.svg" className='svg' alt="top right arrow" />
                                 <h3>Heading</h3>
@@ -205,7 +205,7 @@ export default function Home() {
         <section>
             <div className="home-secG sec-pad">
                 <div className="container">
-                    <div className="heading text-center">
+                    <div className="heading text-center" data-animate="fade-up">
                         <h3>Global Reach</h3>
                         <p>Team Infraplus has global experience of working in more than 20 countries inAfrica, Middle East and Southeast Asia.</p>
                     </div>
@@ -243,7 +243,7 @@ export default function Home() {
                         <figure>
                             <img src="/assets/images/home/callto1.jpg" alt="Join our team" />
                         </figure>
-                        <figcaption>
+                        <figcaption data-animate="fade-right">
                             <h3>Join our team</h3>  
                             <p>Join the Journey, Shape the Future</p>
                             <Link href="/careers" className='btn btn-white'>Join Now</Link>
@@ -253,7 +253,7 @@ export default function Home() {
                         <figure>
                             <img src="/assets/images/home/callto2.jpg" alt="Let's Collaborate" />
                         </figure>
-                        <figcaption>
+                        <figcaption data-animate="fade-left">
                             <h3>let’s Collaborate</h3>  
                             <p>Bringing Ideas Together, Building Success</p>
                             <Link href="/contact-us" className='btn btn-white'>Contact Us</Link>
