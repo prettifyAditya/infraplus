@@ -348,6 +348,11 @@
   font-size: 36px;
   color: var(--white);
 }
+@media only screen and (max-width: 991px) {
+  .home-secH .call-to-action .item-md figcaption h3 {
+    font-size: 30px;
+  }
+}
 .home-secH .call-to-action .item-md figcaption p {
   font-size: 16px;
   font-family: "ttrg-bd";

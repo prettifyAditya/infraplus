@@ -160,6 +160,11 @@
   max-width: 100%;
   text-align: center;
 }
+@media only screen and (max-width: 991px) {
+  .global-container {
+    margin-top: 50px;
+  }
+}
 .global-container .map-image {
   width: 100%;
   height: auto;
@@ -195,29 +200,71 @@
   right: 32%;
   top: 40%;
 }
+@media only screen and (max-width: 991px) {
+  .global-container .pointer.point1 {
+    right: 19%;
+    top: 35%;
+  }
+}
 .global-container .pointer.point2 {
   right: 22%;
   top: 27%;
+}
+@media only screen and (max-width: 991px) {
+  .global-container .pointer.point2 {
+    right: 8%;
+    top: 10%;
+  }
 }
 .global-container .pointer.point3 {
   right: 40%;
   top: 22%;
 }
+@media only screen and (max-width: 991px) {
+  .global-container .pointer.point3 {
+    right: 26%;
+    top: 6%;
+  }
+}
 .global-container .pointer.point4 {
   right: 45%;
   top: 40%;
+}
+@media only screen and (max-width: 991px) {
+  .global-container .pointer.point4 {
+    right: 38%;
+    top: 31%;
+  }
 }
 .global-container .pointer.point5 {
   right: 42%;
   top: 60%;
 }
+@media only screen and (max-width: 991px) {
+  .global-container .pointer.point5 {
+    right: 39%;
+    top: 60%;
+  }
+}
 .global-container .pointer.point6 {
   bottom: 36%;
   left: 35%;
 }
+@media only screen and (max-width: 991px) {
+  .global-container .pointer.point6 {
+    bottom: 29%;
+    left: 21%;
+  }
+}
 .global-container .pointer.point7 {
   top: 34%;
   left: 28%;
+}
+@media only screen and (max-width: 991px) {
+  .global-container .pointer.point7 {
+    top: 16%;
+    left: 10%;
+  }
 }
 .global-container .pointer span {
   background-color: var(--primary);

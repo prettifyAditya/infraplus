@@ -128,6 +128,8 @@
         position: relative
         max-width: 100%
         text-align: center
+        @include media(991) 
+            margin-top: 50px 
         .map-image
             width: 100%
             height: auto
@@ -158,24 +160,45 @@
             &.point1
                 right: 32%
                 top: 40%
+                @include media(991)                 
+                    right: 19%
+                    top: 35%
             &.point2
                 right: 22%
                 top: 27%
+                @include media(991)        
+                    right: 8%
+                    top: 10%
             &.point3
                 right: 40%
                 top: 22%
+                @include media(991)        
+                    right: 26%
+                    top: 6%
             &.point4
                 right: 45%
                 top: 40%
+                @include media(991)        
+                    right: 38%
+                    top: 31%
             &.point5
                 right: 42%
                 top: 60%
+                @include media(991)        
+                    right: 39%
+                    top: 60%
             &.point6
                 bottom: 36%
                 left: 35%
+                @include media(991)        
+                    bottom: 29%
+                    left: 21%
             &.point7
                 top: 34%
                 left: 28%
+                @include media(991)   
+                    top: 16%
+                    left: 10%
             span
                 background-color: var(--primary)
                 padding: 4px 20px

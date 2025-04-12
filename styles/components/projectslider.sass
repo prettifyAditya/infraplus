@@ -10,6 +10,8 @@
         position: absolute
         right: 3%
         top: 10%
+        @include media(991) 
+            top: 0
         button
             background: $white
             width: 40px
@@ -24,6 +26,7 @@
     .swiper-slide
         .item-md
             border-radius: 15px
+            height: 100%
             &:hover
                 figure
                     img
