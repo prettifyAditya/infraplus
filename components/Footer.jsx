@@ -34,7 +34,7 @@ export default function Footer() {
                 </div>
                 <div className="colB">
                     <button className="enquire-btn">Enquire Now</button>
-                    <Link href="javascript:;" className="white-border">Whatsapp</Link>
+                    <a href="wa.link/o3wjjo" target="_blank" className="white-border">Whatsapp</a>
                 </div>
             </div>
             <div className="main-footer">
