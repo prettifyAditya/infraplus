@@ -11,31 +11,31 @@
     left: 100%;
   }
 }
-section .container {
+section.border-sec .container {
   --container: 1200px;
   border-left: 2px dotted #666;
 }
-section .container .services-secA {
+section.border-sec .container .services-secA {
   padding-top: 70px;
 }
-section .container .services-secA .heading {
+section.border-sec .container .services-secA .heading {
   text-align: center;
 }
-section .container .services-secA .heading p {
+section.border-sec .container .services-secA .heading p {
   max-width: 764px;
   margin: 0 auto;
   color: var(--black);
 }
-section .container .services-secB .step-count {
+section.border-sec .container .services-secB .step-count {
   padding: 70px 0;
   width: 100%;
   margin-left: -25px;
 }
-section .container .services-secB .step-count .heading {
+section.border-sec .container .services-secB .step-count .heading {
   display: flex;
   gap: 20px;
 }
-section .container .services-secB .step-count .heading span {
+section.border-sec .container .services-secB .step-count .heading span {
   display: inline-block;
   padding: 6px 8px;
   color: var(--black);
@@ -46,30 +46,30 @@ section .container .services-secB .step-count .heading span {
   border-radius: 50%;
   background: var(--white);
 }
-section .container .services-secB .step-count .heading h6 {
+section.border-sec .container .services-secB .step-count .heading h6 {
   font-size: 24px;
   line-height: 1.2;
   font-family: "ttrg-bd";
   color: var(--black);
 }
-section .container .services-secB .step-count .step-details {
+section.border-sec .container .services-secB .step-count .step-details {
   padding-left: 70px;
   gap: 50px;
 }
-section .container .services-secB .step-count .step-details .colA img {
+section.border-sec .container .services-secB .step-count .step-details .colA img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-section .container .services-secB .step-count .step-details .colB ul {
+section.border-sec .container .services-secB .step-count .step-details .colB ul {
   padding-left: 25px;
 }
-section .container .services-secB .step-count .step-details .colB ul li {
+section.border-sec .container .services-secB .step-count .step-details .colB ul li {
   position: relative;
   padding-bottom: 5px;
   color: var(--black);
 }
-section .container .services-secB .step-count .step-details .colB ul li::before {
+section.border-sec .container .services-secB .step-count .step-details .colB ul li::before {
   content: "";
   position: absolute;
   left: -20px;
@@ -79,7 +79,7 @@ section .container .services-secB .step-count .step-details .colB ul li::before 
   background-color: var(--primary);
   border-radius: 50%;
 }
-section .container .services-secB .step-count .step-details .colB .btn-wrapper {
+section.border-sec .container .services-secB .step-count .step-details .colB .btn-wrapper {
   margin-top: 50px;
   display: flex;
   align-items: center;

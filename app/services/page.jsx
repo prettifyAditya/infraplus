@@ -38,7 +38,7 @@ export default function Services() {
                 title="Services"
                 desc="Consulting services from the stage of conceptualization to planning, design and detailed engineering"
             />
-        <section>
+        <section className="border-sec">
             <div className="container">
                 <div className="services-secA">
                     <div className="heading">

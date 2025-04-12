@@ -2017,6 +2017,11 @@ button {
 .sec-pad {
   padding: 70px 0 90px;
 }
+@media only screen and (max-width: 991px) {
+  .sec-pad {
+    padding: 60px 0 80px;
+  }
+}
 
 .bg-circle {
   position: relative;
