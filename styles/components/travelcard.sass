@@ -42,8 +42,14 @@
         display: flex
         align-items: end
         overflow: hidden
+        position: relative
+        @include before(linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.95) 100%))
+        &::before
+            border-radius: 20px
         @include media(991) 
             padding: 10px 15px 30px
+        @include media(540)
+            border-right: 0
         &:hover
             .content
                 transform: translateY(0)
@@ -55,6 +61,8 @@
             transform: translateY(86%)
             @include media(991) 
                 transform: translateY(88%)
+            @include media(540)
+                transform: translateY(0%)
             h2
                 font-size: 30px
                 line-height: 1.2
@@ -64,6 +72,8 @@
                 transition: .5s ease
                 @include media(991) 
                     font-size: 23px
+                @include media(540)
+                    padding-bottom: 0
                 &::before
                     content: ""
                     width: 62px
@@ -80,6 +90,8 @@
                 overflow: hidden
                 @include media(991) 
                     max-height: 195px
+                @include media(540)
+                    padding: 15px 0 15px 25px
                 li
                     position: relative
                     padding-bottom: 5px

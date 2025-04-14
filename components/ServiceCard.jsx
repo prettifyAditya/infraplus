@@ -18,7 +18,27 @@ export default function ServiceSlider() {
                 swiperRef.current.swiper.navigation.update();
             }
         }, 100)
+        
       }, []);
+
+    const updateBgImageFromActiveSlide = () => {
+        const swiperEl = swiperRef.current
+        if(!swiperEl) return;
+
+        const activeSlide = swiperEl.slides[swiperEl.activeIndex]
+        const mainCard = activeSlide?.querySelector('.main-card')
+        const newBg = mainCard.getAttribute('data-bg')
+        
+
+        if (newBg) {    
+            setBgImage(newBg)
+        }
+    }
+
+    useEffect(() => {
+        updateBgImageFromActiveSlide()
+        
+    }, [])
 
     const handleMouseEnter = (event) => {
         const newBg = event.currentTarget.getAttribute('data-bg')

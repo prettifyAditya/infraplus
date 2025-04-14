@@ -36,7 +36,7 @@ export default function ProjectSlider() {
             }}
             breakpoints={{
                     0: {
-                        slidesPerView: 1,
+                        slidesPerView: 1.2,
                     },
                     540: {
                         slidesPerView: 1,

@@ -65,10 +65,34 @@
   display: flex;
   align-items: end;
   overflow: hidden;
+  position: relative;
+  position: relative;
+}
+.service-slider .main-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.95) 100%);
+}
+.service-slider .main-card::before {
+  border-radius: 20px;
 }
 @media only screen and (max-width: 991px) {
   .service-slider .main-card {
     padding: 10px 15px 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .service-slider .main-card {
+    border-right: 0;
   }
 }
 .service-slider .main-card:hover .content {
@@ -86,6 +110,11 @@
     transform: translateY(88%);
   }
 }
+@media only screen and (max-width: 540px) {
+  .service-slider .main-card .content {
+    transform: translateY(0%);
+  }
+}
 .service-slider .main-card .content h2 {
   font-size: 30px;
   line-height: 1.2;
@@ -97,6 +126,11 @@
 @media only screen and (max-width: 991px) {
   .service-slider .main-card .content h2 {
     font-size: 23px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .service-slider .main-card .content h2 {
+    padding-bottom: 0;
   }
 }
 .service-slider .main-card .content h2::before {
@@ -118,6 +152,11 @@
 @media only screen and (max-width: 991px) {
   .service-slider .main-card .content ul {
     max-height: 195px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .service-slider .main-card .content ul {
+    padding: 15px 0 15px 25px;
   }
 }
 .service-slider .main-card .content ul li {

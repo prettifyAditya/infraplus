@@ -2409,6 +2409,7 @@ footer .call-to-action .colA {
   footer .call-to-action .colA {
     flex-direction: column;
     width: 100%;
+    align-items: start;
     gap: 10px;
   }
 }
@@ -2509,6 +2510,8 @@ footer .main-footer .colB {
 @media only screen and (max-width: 540px) {
   footer .main-footer .colB {
     flex-wrap: wrap;
+    padding: 0;
+    gap: 27px;
   }
 }
 footer .main-footer .colB .list {
