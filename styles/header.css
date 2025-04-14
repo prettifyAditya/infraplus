@@ -2129,6 +2129,11 @@ header .header-wrapper {
   --elementhover: var(--primary);
   gap: 1.5rem;
 }
+@media only screen and (max-width: 1024px) {
+  header .header-wrapper {
+    gap: 1rem;
+  }
+}
 @media only screen and (max-width: 991px) {
   header .header-wrapper {
     align-items: center;
@@ -2137,12 +2142,12 @@ header .header-wrapper {
 }
 @media only screen and (max-width: 768px) {
   header .header-wrapper {
-    gap: 14rem;
+    gap: 2rem;
   }
 }
 @media only screen and (max-width: 540px) {
   header .header-wrapper {
-    gap: 5rem;
+    gap: 12rem;
   }
 }
 header .header-wrapper .colA, header .header-wrapper .colB, header .header-wrapper .colC {
@@ -2343,6 +2348,11 @@ header .header-wrapper .nav-b li:first-child {
   border-right: 1px solid var(--white);
   padding-right: 15px;
 }
+@media only screen and (max-width: 768px) {
+  header .header-wrapper .nav-b li:first-child {
+    display: none;
+  }
+}
 header .header-wrapper .nav-b li:first-child a {
   display: flex;
   align-items: center;
@@ -2511,11 +2521,16 @@ footer .main-footer .colB {
   footer .main-footer .colB {
     flex-wrap: wrap;
     padding: 0;
-    gap: 27px;
+    gap: 10px;
   }
 }
 footer .main-footer .colB .list {
   flex: 1;
+}
+@media only screen and (max-width: 540px) {
+  footer .main-footer .colB .list {
+    flex: 0 1 46%;
+  }
 }
 footer .main-footer .colB .list h6 {
   font-size: 18px;

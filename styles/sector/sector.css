@@ -14,6 +14,11 @@
 .banner.project-banner .bg {
   height: 100vh;
 }
+@media only screen and (max-width: 540px) {
+  .banner.project-banner .bg {
+    height: 70vh;
+  }
+}
 .banner.project-banner .banner-wrapper .heading {
   text-align: center;
 }
@@ -24,6 +29,21 @@
   color: #fff;
   font-family: "ttrg-bd";
 }
+@media only screen and (max-width: 991px) {
+  .banner.project-banner .banner-wrapper .heading h2 {
+    font-size: 58px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner.project-banner .banner-wrapper .heading h2 {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .banner.project-banner .banner-wrapper .heading h2 {
+    font-size: 40px;
+  }
+}
 .banner.project-banner .banner-wrapper .heading p {
   max-width: 550px;
   font-size: 24px;
@@ -31,6 +51,21 @@
   font-family: "ttrg-bd";
   color: var(--white);
   margin: 0 auto;
+}
+@media only screen and (max-width: 991px) {
+  .banner.project-banner .banner-wrapper .heading p {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner.project-banner .banner-wrapper .heading p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .banner.project-banner .banner-wrapper .heading p {
+    font-size: 16px;
+  }
 }
 .banner.project-banner .filter-strip {
   width: -moz-fit-content;
@@ -116,11 +151,43 @@
   display: flex;
   gap: 70px;
 }
+@media only screen and (max-width: 1024px) {
+  .sector-container {
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .sector-container {
+    flex-direction: column;
+    padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sector-container {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .sector-container {
+    padding: 40px 0;
+    gap: 25px;
+  }
+}
 .sector-container .tab-nav {
   flex-direction: column;
   align-items: center;
   flex: 0 1 25%;
   gap: 5px;
+}
+@media only screen and (max-width: 991px) {
+  .sector-container .tab-nav {
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+  }
 }
 .sector-container .tab-nav li {
   display: flex;
@@ -132,8 +199,25 @@
   transition: 0.5s ease;
   color: var(--black);
 }
+@media only screen and (max-width: 991px) {
+  .sector-container .tab-nav li {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .sector-container .tab-nav li {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
 .sector-container .tab-nav li svg {
   fill: currentColor;
+}
+@media only screen and (max-width: 991px) {
+  .sector-container .tab-nav li svg {
+    flex: 0 1 30%;
+  }
 }
 .sector-container .tab-nav li img {
   width: 30px;
@@ -154,11 +238,32 @@
   gap: 50px;
   transition: 1s ease;
 }
+@media only screen and (max-width: 768px) {
+  .sector-container .tab-nav-content .tabs {
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .sector-container .tab-nav-content .tabs {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .sector-container .tab-nav-content .tabs figure {
+    flex: 1;
+  }
+}
 .sector-container .tab-nav-content .tabs figure img {
   border-radius: 15px;
 }
 .sector-container .tab-nav-content .tabs figcaption {
   padding-top: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .sector-container .tab-nav-content .tabs figcaption {
+    flex: 1;
+  }
 }
 .sector-container .tab-nav-content .tabs figcaption h3 {
   font-size: 24px;

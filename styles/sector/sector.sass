@@ -4,6 +4,8 @@
     &.project-banner
         .bg
             height: 100vh
+            @include media(540) 
+                height: 70vh
         .banner-wrapper
             .heading
                 text-align: center
@@ -13,6 +15,12 @@
                     margin-bottom: 20px
                     color: #fff
                     font-family: $ttrg-bd
+                    @include media(991) 
+                        font-size: 58px
+                    @include media(768) 
+                        font-size: 50px
+                    @include media(540) 
+                        font-size: 40px
                 p
                     max-width: 550px
                     font-size: 24px
@@ -20,6 +28,12 @@
                     font-family: $ttrg-bd
                     color: $white
                     margin: 0 auto
+                    @include media(991) 
+                        font-size: 22px
+                    @include media(768) 
+                        font-size: 20px
+                    @include media(540) 
+                        font-size: 16px
         .filter-strip
             width: fit-content
             box-shadow: 0 2px 0 1px rgb(0 0 0 / 45%)
@@ -90,11 +104,28 @@
         padding: 70px 0
         display: flex
         gap: 70px
+        @include media(1024)
+            gap: 50px
+        @include media(991)
+            flex-direction: column
+            padding: 60px 0 
+        @include media(768) 
+            padding: 50px 0 
+        @include media(540) 
+            padding: 40px 0
+            gap: 25px
         .tab-nav
             flex-direction: column
             align-items: center
             flex: 0 1 25%
             gap: 5px
+            @include media(991)
+                flex-direction: row
+                align-items: center
+                flex: 1
+                flex-wrap: nowrap
+                overflow-x: auto
+                gap: 10px
             li
                 display: flex
                 align-items: center
@@ -104,8 +135,15 @@
                 border-radius: 5px
                 transition: .5s ease
                 color: $black
+                @include media(991) 
+                    min-width: fit-content
+                @include media(540) 
+                    font-size: 14px
+                    padding: 5px 10px
                 svg
                     fill: currentColor
+                    @include media(991)
+                        flex:  0 1 30%
                 img
                     width: 30px
                 &:hover, &.active
@@ -121,11 +159,20 @@
                 display: flex
                 gap: 50px
                 transition: 1s ease
+                @include media(768) 
+                    gap: 30px   
+                    flex-direction: column
+                @include media(540) 
+                    gap: 10px
                 figure
+                    @include media(1024)
+                        flex: 1
                     img
                        border-radius: 15px
                 figcaption
                     padding-top: 10px
+                    @include media(1024)
+                        flex: 1
                     h3
                         font-size: 24px
                         line-height: 1
