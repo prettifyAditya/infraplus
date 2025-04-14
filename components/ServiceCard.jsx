@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function ServiceSlider() {
     const swiperRef = useRef(null);
-    const [bgImage, setBgImage] = useState("/assets/images/home/secB-img1.jpg");
+    const [bgImage, setBgImage] = useState("");
 
     useEffect(() => {
         setTimeout(() => {
