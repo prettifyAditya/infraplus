@@ -171,6 +171,12 @@
   -o-object-fit: none;
      object-fit: none;
 }
+@media only screen and (max-width: 768px) {
+  .global-container .map-image {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 .global-container .pointer {
   position: absolute;
   width: 12px;
@@ -181,6 +187,12 @@
   cursor: pointer;
   transform: translate(-50%, -50%);
   animation: blink 2s forwards 0.2s infinite;
+}
+@media only screen and (max-width: 768px) {
+  .global-container .pointer {
+    width: 8px;
+    height: 8px;
+  }
 }
 .global-container .pointer:hover span {
   opacity: 1;
@@ -196,6 +208,15 @@
   border-radius: 50%;
   border: 2px solid var(--primary);
 }
+@media only screen and (max-width: 768px) {
+  .global-container .pointer::before {
+    left: -9px;
+    bottom: -9px;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+  }
+}
 .global-container .pointer.point1 {
   right: 32%;
   top: 40%;
@@ -204,6 +225,11 @@
   .global-container .pointer.point1 {
     right: 19%;
     top: 35%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .global-container .pointer.point1 {
+    right: 26%;
   }
 }
 .global-container .pointer.point2 {
@@ -216,6 +242,12 @@
     top: 10%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .global-container .pointer.point2 {
+    right: 14%;
+    top: 18%;
+  }
+}
 .global-container .pointer.point3 {
   right: 40%;
   top: 22%;
@@ -226,6 +258,12 @@
     top: 6%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .global-container .pointer.point3 {
+    right: 37%;
+    top: 10%;
+  }
+}
 .global-container .pointer.point4 {
   right: 45%;
   top: 40%;
@@ -233,7 +271,13 @@
 @media only screen and (max-width: 991px) {
   .global-container .pointer.point4 {
     right: 38%;
-    top: 31%;
+    top: 31;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .global-container .pointer.point4 {
+    right: 44%;
+    top: 36%;
   }
 }
 .global-container .pointer.point5 {
@@ -256,6 +300,11 @@
     left: 21%;
   }
 }
+@media only screen and (max-width: 768px) {
+  .global-container .pointer.point6 {
+    left: 29%;
+  }
+}
 .global-container .pointer.point7 {
   top: 34%;
   left: 28%;
@@ -264,6 +313,12 @@
   .global-container .pointer.point7 {
     top: 16%;
     left: 10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .global-container .pointer.point7 {
+    top: 28%;
+    left: 18%;
   }
 }
 .global-container .pointer span {
@@ -278,6 +333,12 @@
   opacity: 0;
   transition: 0.5s ease;
   --triangle: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .global-container .pointer span {
+    bottom: 60%;
+    transform: translate(-38%, -60%);
+  }
 }
 .global-container .pointer span::before {
   content: "";

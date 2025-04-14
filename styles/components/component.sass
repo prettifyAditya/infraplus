@@ -134,6 +134,8 @@
             width: 100%
             height: auto
             object-fit: none
+            @include media(768) 
+                object-fit: contain
         .pointer
             position: absolute
             width: 12px
@@ -144,6 +146,9 @@
             cursor: pointer
             transform: translate(-50%, -50%)
             animation: blink 2s forwards .2s infinite
+            @include media(768) 
+                width: 8px
+                height: 8px
             &:hover
                 span
                     opacity: 1
@@ -157,30 +162,47 @@
                 height: 20px
                 border-radius: 50%
                 border: 2px solid var(--primary)
+                @include media(768) 
+                    left: -9px
+                    bottom: -9px
+                    width: 10px
+                    height: 10px
+                    padding: 10px
             &.point1
                 right: 32%
                 top: 40%
                 @include media(991)                 
                     right: 19%
                     top: 35%
+                @include media(768) 
+                    right: 26%
             &.point2
                 right: 22%
                 top: 27%
                 @include media(991)        
                     right: 8%
                     top: 10%
+                @include media(768) 
+                    right: 14%
+                    top: 18%
             &.point3
                 right: 40%
                 top: 22%
                 @include media(991)        
                     right: 26%
                     top: 6%
+                @include media(768) 
+                    right: 37%
+                    top: 10%
             &.point4
                 right: 45%
                 top: 40%
                 @include media(991)        
                     right: 38%
-                    top: 31%
+                    top: 31
+                @include media(768) 
+                    right: 44%
+                    top: 36%
             &.point5
                 right: 42%
                 top: 60%
@@ -193,12 +215,17 @@
                 @include media(991)        
                     bottom: 29%
                     left: 21%
+                @include media(768) 
+                    left: 29%
             &.point7
                 top: 34%
                 left: 28%
                 @include media(991)   
                     top: 16%
                     left: 10%
+                @include media(768) 
+                    top: 28%
+                    left: 18%
             span
                 background-color: var(--primary)
                 padding: 4px 20px
@@ -211,6 +238,9 @@
                 opacity: 0
                 transition: .5s ease
                 --triangle: 10px
+                @include media(768) 
+                    bottom: 60%
+                    transform: translate(-38%, -60%)
                 &::before
                     content: ""
                     display: block

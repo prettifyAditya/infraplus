@@ -680,6 +680,11 @@ h2 {
   line-height: 1.2;
   font-family: "ttrg-bd";
 }
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+}
 
 h3 {
   font-size: 48px;
@@ -2011,6 +2016,16 @@ button {
 @media only screen and (max-width: 991px) {
   .sec-pad {
     padding: 60px 0 80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sec-pad {
+    padding: 50px 0 70px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .sec-pad {
+    padding: 40px 0 50px;
   }
 }
 

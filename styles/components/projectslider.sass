@@ -18,6 +18,9 @@
             height: 40px
             border-radius: 50%
             border: 1px solid $black
+            @include media(768) 
+                width: 30px
+                height: 30px
             &.swiper-button-disabled
                 opacity: 0.4 
                 cursor: no-drop
@@ -37,6 +40,8 @@
             figure
                 border-radius: 15px
                 overflow: hidden
+                @include media(540) 
+                    height: 250px
                 img
                     border-radius: 15px
                     transition: .5s ease
@@ -48,6 +53,8 @@
                     line-height: 1.2
                     color: $white
                     font-family: $ttrg-bd
+                    @include media(540) 
+                        font-size: 16px 
 
 .related-slider
     margin-top: 40px

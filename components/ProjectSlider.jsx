@@ -34,6 +34,20 @@ export default function ProjectSlider() {
                 prevEl: ".projects-prev",
                 nextEl: ".projects-next"
             }}
+            breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    540: {
+                        slidesPerView: 1,
+                    },
+                    991: {
+
+                    },
+                    1200: {
+
+                    }
+                }}
             onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
             <SwiperSlide>

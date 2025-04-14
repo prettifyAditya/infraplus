@@ -16,12 +16,17 @@
         top: 8%
         right: 4%
         z-index: 2
+        @include media(768)
+            gap: 10px
         button
             background: $white
             width: 40px
             height: 40px
             border-radius: 50%
             border: 1px solid $black
+            @include media(768)
+                width: 30px
+                height: 30px
             &.swiper-button-disabled
                 opacity: 0.4 
                 cursor: no-drop

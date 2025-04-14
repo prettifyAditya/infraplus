@@ -29,8 +29,10 @@ header
         @include media(991)   
             align-items: center
             justify-content: space-between
-        @include media(540)
-            gap: 4.5rem
+        @include media(768)
+            gap: 14rem
+        @include media(540)     
+            gap: 5rem
         .colA,.colB, .colC
             height: 100%
         .colA
@@ -41,6 +43,8 @@ header
                     padding: 10px 0
                 img
                     height: 100%
+                    @include media(768)
+                        object-fit: contain
         .colB
             flex: 1
             display: flex
@@ -48,6 +52,8 @@ header
             gap: 47px
             @include media(991)   
                 justify-content: end
+            @include media(768)
+                display: none
         ul
             text-align: center
             cursor: default
@@ -217,24 +223,41 @@ footer
         background: var(--gradient-a)
         padding: 15px 25px
         align-items: center
+        @include media(991)
+            flex-direction: column
+            gap: 25px
         .colA
             flex: 1
             display: flex
             align-items: center
+            @include media(540)     
+                flex-direction: column
+                width: 100%
+                gap: 10px
             .action
                 display: flex
                 gap: 10px
                 padding: 0 30px
+                @include media(768) 
+                    gap: 6px
+                    padding: 0 10px
+                    flex: 1
+                @include media(540)     
+                    gap: 12px
                 &:first-child
                     padding-left: 0
                 &:not(:last-child)
                     border-right: 1px solid $white
+                    @include media(540)     
+                        border-right: none
                 .contact
                     h6
                         font-family: $ttrg-bd
                         font-size: 18px
                         color: $white
                         line-height: 1
+                        @include media(768) 
+                            font-size: 16px
                     a
                         color: $white
         .colB
@@ -246,13 +269,29 @@ footer
         padding: 50px 25px 80px
         display: flex
         gap: 30px
+        @include media(991)
+            flex-direction: column
+        @include media(540)     
+            padding: 30px 15px 50px
         .colA
             flex: 0 1 auto
+            @include media(991)
+                margin: 0 auto 20px
+            @include media(540)     
+                margin: 0 auto
+            img
+                @include media(991)
+                    height: 100%
+                    object-fit: contain
         .colB
             flex: 1
             display: flex
             gap: 20px
             padding: 0 40px
+            @include media(991)
+                padding: 0 20px
+            @include media(540)     
+                flex-wrap: wrap
             .list
                 flex: 1
                 h6
@@ -272,6 +311,8 @@ footer
                                 padding-left: 5px
                 &:last-child
                     flex: 0 1 40%
+                    @include media(540)     
+                        flex: 1
                     a
                         display: flex
                         gap: 5px
@@ -284,6 +325,8 @@ footer
                 display: flex
                 align-items: center
                 gap: 30px
+                @include media(991)
+                    justify-content: center
 
     .bottom-footer
         padding: 30px 25px 40px
@@ -292,6 +335,9 @@ footer
         justify-content: space-between
         width: 100%
         align-items: center
+        @include media(540)     
+            flex-direction: column
+            gap: 5px
         .pret
             a
                 display: flex

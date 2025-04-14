@@ -35,6 +35,12 @@
   border-radius: 50%;
   border: 1px solid var(--black);
 }
+@media only screen and (max-width: 768px) {
+  .project-slider .swiper-nav button {
+    width: 30px;
+    height: 30px;
+  }
+}
 .project-slider .swiper-nav button.swiper-button-disabled {
   opacity: 0.4;
   cursor: no-drop;
@@ -57,6 +63,11 @@
   border-radius: 15px;
   overflow: hidden;
 }
+@media only screen and (max-width: 540px) {
+  .project-slider .swiper-slide .item-md figure {
+    height: 250px;
+  }
+}
 .project-slider .swiper-slide .item-md figure img {
   border-radius: 15px;
   transition: 0.5s ease;
@@ -70,6 +81,11 @@
   line-height: 1.2;
   color: var(--white);
   font-family: "ttrg-bd";
+}
+@media only screen and (max-width: 540px) {
+  .project-slider .swiper-slide .item-md figcaption h6 {
+    font-size: 16px;
+  }
 }
 
 .related-slider {

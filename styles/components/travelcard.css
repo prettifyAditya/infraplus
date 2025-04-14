@@ -30,12 +30,23 @@
   right: 4%;
   z-index: 2;
 }
+@media only screen and (max-width: 768px) {
+  .service-slider .swiper-nav {
+    gap: 10px;
+  }
+}
 .service-slider .swiper-nav button {
   background: var(--white);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 1px solid var(--black);
+}
+@media only screen and (max-width: 768px) {
+  .service-slider .swiper-nav button {
+    width: 30px;
+    height: 30px;
+  }
 }
 .service-slider .swiper-nav button.swiper-button-disabled {
   opacity: 0.4;

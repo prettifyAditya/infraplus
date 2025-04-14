@@ -47,6 +47,20 @@ export default function ServiceSlider() {
                     prevEl: ".service-prev",
                     nextEl: ".service-next"
                 }}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    540: {
+                        slidesPerView: 2,
+                    },
+                    991: {
+
+                    },
+                    1200: {
+
+                    }
+                }}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
             >
                 <SwiperSlide>
