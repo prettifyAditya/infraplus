@@ -11,6 +11,17 @@
     left: 100%;
   }
 }
+@media only screen and (max-width: 991px) {
+  .contact-secA .flex {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-secA .flex {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .contact-secA .flex .colA, .contact-secA .flex .colB {
   flex: 1;
 }
@@ -24,6 +35,26 @@
   aspect-ratio: 0.9876;
   line-height: 0;
 }
+@media only screen and (max-width: 991px) {
+  .contact-secA .flex .colA .video-icon {
+    -webkit-mask-size: 80%;
+            mask-size: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contact-secA .flex .colA .video-icon {
+    -webkit-mask-size: 90%;
+            mask-size: 90%;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contact-secA .flex .colA .video-icon {
+    -webkit-mask-size: 100%;
+            mask-size: 100%;
+    height: 90px;
+  }
+}
 .contact-secA .flex .colA .video-icon video {
   width: 100%;
   height: 100%;
@@ -35,11 +66,22 @@
   font-size: 24px;
   line-height: 1.2;
 }
+@media only screen and (max-width: 540px) {
+  .contact-secA .flex .colB h3 {
+    font-size: 22px;
+  }
+}
 .contact-secA .flex .colB .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px 10px;
   padding-top: 30px;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secA .flex .colB .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 20px;
+  }
 }
 .contact-secA .flex .colB .contact-grid .contact-col {
   background-color: var(--white);
@@ -47,6 +89,11 @@
   text-align: center;
   border: 1px solid #D1D0D0;
   border-radius: 15px;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secA .flex .colB .contact-grid .contact-col {
+    padding: 20px 15px;
+  }
 }
 .contact-secA .flex .colB .contact-grid .contact-col .icon {
   padding-bottom: 10px;
@@ -94,6 +141,12 @@
   font-size: 36px;
   color: var(--white);
 }
+@media only screen and (max-width: 540px) {
+  .contact-secB .heading h3 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}
 .contact-secB .heading p {
   color: var(--white);
 }
@@ -101,6 +154,11 @@
   padding-top: 50px;
   max-width: 600px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 540px) {
+  .contact-secB .form-container {
+    padding-top: 30px;
+  }
 }
 .contact-secB .form-container .contact-form {
   --labelbefore: var(--white);
@@ -122,4 +180,9 @@
 }
 .contact-secC iframe {
   filter: grayscale(1);
+}
+@media only screen and (max-width: 540px) {
+  .contact-secC iframe {
+    height: 400px;
+  }
 }/*# sourceMappingURL=contact.css.map */

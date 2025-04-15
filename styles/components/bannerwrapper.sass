@@ -30,19 +30,44 @@
                 font-family: $ttrg-bd
                 color: $white
 
-.banner.serviceDetails-banner
-    .heading
-        p
-            font-size: 16px
-            max-width: 450px
-
 .banner.contact-banner
     &::before
         z-index: 1
     .bg
+        @include media(540) 
+            height: 60vh
         video
             transform: scaleX(-1)
             filter: grayscale(1)
+        .banner-wrapper
+            .heading
+                h2
+                    @include media(991) 
+                        font-size: 58px
+                    @include media(768) 
+                        font-size: 48px
+                    @include media(540) 
+                        font-size: 30px
+                p
+                    @include media(540) 
+                        font-size: 16px 
+
+.aboutus-banner
+    .bg
+        @include media(540) 
+            height: 60vh
+        .banner-wrapper
+            .heading
+                h2
+                    @include media(991) 
+                        font-size: 58px
+                    @include media(768) 
+                        font-size: 48px
+                    @include media(540) 
+                        font-size: 30px
+                p
+                    @include media(540) 
+                        font-size: 16px 
 
 .banner.blog-details-banner
     .heading

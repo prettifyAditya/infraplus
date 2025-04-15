@@ -1,7 +1,7 @@
 "use client"
 import BannerWrapper from "@/components/BannerWrapper"
 import '../../styles/aboutus/aboutus.css'
-import '../../styles/home/home.css'
+// import '../../styles/home/home.css'
 import Image from "next/image"
 import AboutJourney from "@/components/AboutJourney"
 import { useEffect } from 'react';

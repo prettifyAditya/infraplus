@@ -752,4 +752,21 @@
 
 .blog-detailsA .flex .colB ul:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 540px) {
+  .serviceDetails-banner .bg {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .serviceDetails-banner .bg .banner-wrapper .heading h2 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .serviceDetails-banner .bg .banner-wrapper .heading p {
+    font-size: 16px;
+    max-width: 320px;
+  }
 }/*# sourceMappingURL=sector.css.map */
