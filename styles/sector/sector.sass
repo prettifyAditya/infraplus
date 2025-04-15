@@ -112,7 +112,7 @@
         @include media(768) 
             padding: 50px 0 
         @include media(540) 
-            padding: 40px 0
+            padding: 20px 0 40px
             gap: 25px
         .tab-nav
             flex-direction: column
@@ -160,10 +160,8 @@
                 gap: 50px
                 transition: 1s ease
                 @include media(768) 
-                    gap: 30px   
-                    flex-direction: column
-                @include media(540) 
-                    gap: 10px
+                    gap: 50px 
+                    flex-direction: column-reverse
                 figure
                     @include media(1024)
                         flex: 1
@@ -197,36 +195,57 @@
                         display: flex
                         align-items: center
                         gap: 10px
+                        @include media(768) 
+                            margin-top: 20px
 
 
 .banner
     &.sector-banner
         .bg
             height: 100vh
+            @include media(768)
+                height: 130vh
         .banner-wrapper
+            @include media(768)
+                bottom: 45%
             .container
                 display: flex
                 align-items: center
                 justify-content: space-between
+                @include media(768)
+                    flex-direction: column
             .heading
                 flex: 0 1 50%
+                @include media(768)
+                    text-align: center
+                    margin-bottom: 30px
                 h2
                     font-size: 36px
                     line-height: 1.2
                     margin-bottom: 10px
                     color: #fff
                     font-family: $ttrg-bd
+                    @include media(540)
+                        font-size: 28px
                 p
                     max-width: 630px
                     font-weight: 500
                     font-size: 18px
                     line-height: 1.2
                     color: $white
+                    @include media(540)
+                        font-size: 16px
+                        max-width: 315px
             .form-wrapper
                 flex: 0 1 30%
                 background: $white
                 padding: 30px 20px
                 border-radius: 15px 
+                @include media(1024)
+                    flex: 0 1 40%
+                @include media(768)
+                    flex: 0 1 100%
+                    width: 100%
                 .title
                     text-align: center
                     margin-bottom: 20px
@@ -249,6 +268,10 @@
         gap: 50px
         .colA
             flex: 0 1 65%
+            @include media(1024)
+                flex: 0 1 60%
+            @include media(768)
+                flex: 0 1 100%
             p
                 padding-bottom: 15px
                 text-align: justify
@@ -268,9 +291,12 @@
                         height: 10px
                         background-color: var(--primary)
                         border-radius: 50%
-
         .colB
             flex: 0 1 30%
+            @include media(991)
+                flex: 0 1 32%
+            @include media(768)
+                flex: 0 1 100%
             h3
                 font-size: 24px
                 line-height: 1
@@ -345,31 +371,65 @@
     &.prodetails-banner
         .bg
             height: 100vh
+            @include media(768)
+                height: 130vh
         .banner-wrapper
+            @include media(991)
+                bottom: 30%
+                translate: 0 30%
+            @include media(768)
+                bottom: 26%
+                translate: 0 26%
             .container
                 display: flex
                 align-items: center
                 justify-content: space-between
+                @include media(768)
+                    flex-direction: column
             .heading
                 flex: 0 1 50%
+                @include media(768)
+                    flex: 1
+                    text-align: center
+                    margin-bottom: 15px
                 h2
                     font-size: 36px
                     line-height: 1.2
                     margin-bottom: 10px
                     color: #fff
                     font-family: $ttrg-bd
-                p
-                    max-width: 700
+                    @include media(991)
+                        font-size: 28px
+                    @include media(540)
+                        font-size: 24px
+                >p
+                    max-width: 700px
                     font-weight: 500
                     font-size: 16px
                     line-height: 1.5
                     color: $white
+                    @include media(991)
+                        line-height: 1.3
+                        max-width: 450px
+                        margin: 0 auto
+                    @include media(540)
+                        display: none
                 .details
                     gap: 20px
                     padding-top: 80px
+                    @include media(991)
+                        padding-top: 40px
+                    @include media(768)
+                        padding-top: 25px
                     li
                         display: flex
                         gap: 15px
+                        @include media(768)
+                            justify-content: center
+                        @include media(540)
+                            flex-direction: column
+                            align-items: center
+                            gap: 0
                         svg, img
                             width: 25px
                         img
@@ -379,6 +439,13 @@
                         &:not(:last-child)
                             border-right: 1px solid $white
                             padding-right: 20px
+                            @include media(991)
+                                flex: 0 1 30%
+                            @include media(768)
+                                flex: 1
+                        &:last-child
+                            @include media(991)
+                                flex: 1
                         .loc-det
                             h6
                                 font-size: 16px
@@ -387,11 +454,17 @@
                             p
                                 font-weight: 400
                                 font-size: 18px
+                                color: $white
+                                @include media(768)
+                                    font-size: 16px
+                                    line-height: 1.2
             .form-wrapper
                 flex: 0 1 30%
                 background: $white
                 padding: 30px 20px
                 border-radius: 15px 
+                @include media(991)
+                    flex: 0 1 40%
                 .title
                     text-align: center
                     margin-bottom: 20px

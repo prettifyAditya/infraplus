@@ -45,6 +45,11 @@
   font-family: "ttrg-bd";
   padding-bottom: 20px;
 }
+@media only screen and (max-width: 768px) {
+  .item.projectCard figcaption h6 {
+    font-size: 16px;
+  }
+}
 .item.projectCard figcaption p {
   font-size: 14px;
   line-height: 1.2;

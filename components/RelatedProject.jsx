@@ -31,6 +31,19 @@ export default function RelatedProject() {
             spaceBetween={20}
             slidesPerView ={3}
             speed={1000}
+            breakpoints={{
+                0: {
+                    slidesPerView: 1.2,
+                },
+                540: {
+                    slidesPerView: 2,
+                },
+                991: {
+                },
+                1200: {
+
+                }
+            }}
             navigation={{
                 prevEl: ".projects-prev",
                 nextEl: ".projects-next"

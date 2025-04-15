@@ -105,6 +105,11 @@
   right: 3%;
   top: 3%;
 }
+@media only screen and (max-width: 540px) {
+  .related-slider .swiper-nav {
+    display: none;
+  }
+}
 .related-slider .swiper-nav button {
   background: var(--white);
   width: 40px;

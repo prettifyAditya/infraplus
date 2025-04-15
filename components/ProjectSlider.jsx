@@ -39,7 +39,7 @@ export default function ProjectSlider() {
                         slidesPerView: 1.2,
                     },
                     540: {
-                        slidesPerView: 1,
+                        slidesPerView: 2.1,
                     },
                     991: {
 
