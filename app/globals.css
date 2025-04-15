@@ -1058,6 +1058,7 @@ button {
   .btn {
     font-size: 14px;
     --height: 30px;
+    --padding: 12px;
   }
 }
 .btn:not([class*=border-]) {

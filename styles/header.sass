@@ -34,7 +34,9 @@ header
         @include media(768)
             gap: 2rem
         @include media(540)     
-            gap: 12rem
+            gap: 10rem
+        @include media(400)
+            gap: 6rem
         .colA,.colB, .colC
             height: 100%
         .colA
@@ -222,6 +224,8 @@ header
 
 
 footer
+    @include media(540)
+        margin-bottom: var(--footerstrip)
     .call-to-action
         width: 100%
         background: var(--gradient-a)
@@ -230,6 +234,8 @@ footer
         @include media(991)
             flex-direction: column
             gap: 25px
+        @include media(540) 
+            padding: 35px
         .colA
             flex: 1
             display: flex
@@ -251,6 +257,8 @@ footer
                     gap: 12px
                 &:first-child
                     padding-left: 0
+                    @include media(540) 
+                        padding-left: 10px
                 &:not(:last-child)
                     border-right: 1px solid $white
                     @include media(540)     
@@ -322,6 +330,7 @@ footer
                     flex: 0 1 40%
                     @include media(540)     
                         flex: 1
+                        margin-top: 20px
                     a
                         display: flex
                         gap: 5px
@@ -682,9 +691,9 @@ footer
     left: 0
     right: 0
     z-index: 4
-    background: $black
+    background: var(--gradient-a)
     display: none
-    @include media(675)
+    @include media(540)
         display: block
     ul
         @include flex

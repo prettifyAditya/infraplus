@@ -32,6 +32,21 @@ export default function CareerSlider() {
             centeredSlides={true}
             slidesPerView ={1.8}
             speed={1000}
+            breakpoints={{
+                0: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 30
+                },
+                540: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 30
+                },
+                991: {
+                },
+                1200: {
+
+                }
+            }}
             navigation={{
                 prevEl: ".career-prev",
                 nextEl: ".career-next"

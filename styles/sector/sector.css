@@ -386,6 +386,11 @@
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 540px) {
+  .sector-detailA {
+    padding-bottom: 0;
+  }
+}
 .sector-detailA .flex {
   gap: 50px;
 }
@@ -528,6 +533,11 @@
 .sector-detailB .container .heading {
   text-align: center;
   padding-bottom: 30px;
+}
+@media only screen and (max-width: 540px) {
+  .sector-detailB .container .heading {
+    padding-bottom: 0;
+  }
 }
 
 .banner.prodetails-banner .bg {
@@ -708,6 +718,11 @@
   border-radius: 5px;
 }
 
+@media only screen and (max-width: 540px) {
+  .service-detailA {
+    padding-bottom: 50px;
+  }
+}
 .service-detailA .colB .form-wrapper {
   background: var(--gradient-a);
   border-radius: 15px;

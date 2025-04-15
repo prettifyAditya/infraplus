@@ -46,6 +46,11 @@
   font-family: "ttrg-bd";
   color: var(--white);
 }
+@media only screen and (max-width: 540px) {
+  .banner .banner-wrapper .heading p {
+    font-family: "ttrg";
+  }
+}
 
 .banner.contact-banner::before {
   z-index: 1;
@@ -85,6 +90,11 @@
     height: 60vh;
   }
 }
+@media only screen and (max-width: 540px) {
+  .aboutus-banner .bg .banner-wrapper .heading {
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 991px) {
   .aboutus-banner .bg .banner-wrapper .heading h2 {
     font-size: 58px;
@@ -103,6 +113,7 @@
 @media only screen and (max-width: 540px) {
   .aboutus-banner .bg .banner-wrapper .heading p {
     font-size: 16px;
+    font-family: "ttrg";
   }
 }
 
@@ -111,4 +122,92 @@
 }
 .banner.blog-details-banner .heading p {
   font-size: 35px;
+}
+
+@media only screen and (max-width: 540px) {
+  .services-banner .bg {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .services-banner .bg .banner-wrapper .heading {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .services-banner .bg .banner-wrapper .heading h2 {
+    font-size: 58px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .services-banner .bg .banner-wrapper .heading h2 {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .services-banner .bg .banner-wrapper .heading h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .services-banner .bg .banner-wrapper .heading p {
+    font-size: 16px;
+    font-family: "ttrg";
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .blog-details-banner .bg {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .blog-details-banner .bg .banner-wrapper .heading {
+    text-align: center;
+  }
+}
+.blog-details-banner .bg .banner-wrapper .heading p {
+  font-family: "ttrg-bd";
+}
+@media only screen and (max-width: 768px) {
+  .blog-details-banner .bg .banner-wrapper .heading p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .blog-details-banner .bg .banner-wrapper .heading p {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .career-banner .bg {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-banner .bg .banner-wrapper .heading {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .career-banner .bg .banner-wrapper .heading h2 {
+    font-size: 58px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .career-banner .bg .banner-wrapper .heading h2 {
+    font-size: 48px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-banner .bg .banner-wrapper .heading h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .career-banner .bg .banner-wrapper .heading p {
+    font-size: 16px;
+    font-family: "ttrg";
+  }
 }/*# sourceMappingURL=bannerwrapper.css.map */

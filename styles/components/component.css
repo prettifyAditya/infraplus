@@ -102,6 +102,16 @@
   color: var(--white);
   font-family: "ttrg-bd";
 }
+@media only screen and (max-width: 768px) {
+  .blogCard figcaption p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .blogCard figcaption p {
+    font-size: 16px;
+  }
+}
 
 .no-record-container {
   position: absolute;

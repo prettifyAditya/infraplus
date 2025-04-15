@@ -1056,6 +1056,7 @@ button {
   .btn {
     font-size: 14px;
     --height: 30px;
+    --padding: 12px;
   }
 }
 .btn:not([class*=border-]) {
@@ -2147,7 +2148,12 @@ header .header-wrapper {
 }
 @media only screen and (max-width: 540px) {
   header .header-wrapper {
-    gap: 12rem;
+    gap: 10rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  header .header-wrapper {
+    gap: 6rem;
   }
 }
 header .header-wrapper .colA, header .header-wrapper .colB, header .header-wrapper .colC {
@@ -2398,6 +2404,11 @@ header.header-shadow {
   box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
 }
 
+@media only screen and (max-width: 540px) {
+  footer {
+    margin-bottom: var(--footerstrip);
+  }
+}
 footer .call-to-action {
   width: 100%;
   background: var(--gradient-a);
@@ -2408,6 +2419,11 @@ footer .call-to-action {
   footer .call-to-action {
     flex-direction: column;
     gap: 25px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  footer .call-to-action {
+    padding: 35px;
   }
 }
 footer .call-to-action .colA {
@@ -2442,6 +2458,11 @@ footer .call-to-action .colA .action {
 }
 footer .call-to-action .colA .action:first-child {
   padding-left: 0;
+}
+@media only screen and (max-width: 540px) {
+  footer .call-to-action .colA .action:first-child {
+    padding-left: 10px;
+  }
 }
 footer .call-to-action .colA .action:not(:last-child) {
   border-right: 1px solid var(--white);
@@ -2554,6 +2575,7 @@ footer .main-footer .colB .list:last-child {
 @media only screen and (max-width: 540px) {
   footer .main-footer .colB .list:last-child {
     flex: 1;
+    margin-top: 20px;
   }
 }
 footer .main-footer .colB .list:last-child a {
@@ -2872,10 +2894,10 @@ footer .bottom-footer .pret a img {
   left: 0;
   right: 0;
   z-index: 4;
-  background: var(--black);
+  background: var(--gradient-a);
   display: none;
 }
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 540px) {
   .footer-strip {
     display: block;
   }

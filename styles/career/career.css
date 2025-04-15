@@ -11,6 +11,11 @@
     left: 100%;
   }
 }
+@media only screen and (max-width: 991px) {
+  .career-secA {
+    padding-bottom: 0;
+  }
+}
 .career-secA .heading {
   max-width: 580px;
   margin: 0 auto;
@@ -20,6 +25,12 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
   padding-top: 50px;
+}
+@media only screen and (max-width: 540px) {
+  .career-secA .grid-container {
+    padding-top: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .career-secA .grid-container .career-col {
   background-color: var(--white);
@@ -63,6 +74,11 @@
   z-index: 2;
   transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 540px) {
+  .career-secB .main-container .career-slider .swiper-nav {
+    display: none;
+  }
+}
 .career-secB .main-container .career-slider .swiper-nav .career-next, .career-secB .main-container .career-slider .swiper-nav .career-prev {
   width: 50px;
   height: 50px;
@@ -74,6 +90,11 @@
   rotate: 180deg;
 }
 
+@media only screen and (max-width: 540px) {
+  .career-secC {
+    padding-top: 0;
+  }
+}
 .career-secC .container .heading {
   padding-bottom: 50px;
 }
@@ -246,9 +267,19 @@
   font-size: 36px;
   line-height: 1.2;
 }
+@media only screen and (max-width: 540px) {
+  .career-secD .heading h3 {
+    font-size: 26px;
+  }
+}
 .career-secD .heading p {
   font-size: 18px;
   color: var(--black);
+}
+@media only screen and (max-width: 540px) {
+  .career-secD .heading p {
+    font-size: 16px;
+  }
 }
 .career-secD .form {
   max-width: 750px;

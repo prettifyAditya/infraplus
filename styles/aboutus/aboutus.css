@@ -82,8 +82,13 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-.about-secB .flex .colB p {
+.about-secB .flex .colB > p {
   color: var(--black);
+}
+@media only screen and (max-width: 540px) {
+  .about-secB .flex .colB > p {
+    text-align: justify;
+  }
 }
 .about-secB .flex .colB .counter-wrapper {
   display: flex;
@@ -101,8 +106,7 @@
 }
 @media only screen and (max-width: 540px) {
   .about-secB .flex .colB .counter-wrapper {
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     gap: 15px;
   }
 }
@@ -142,6 +146,7 @@
   font-family: "ttrg-bd";
 }
 .about-secB .flex .colB .counter-wrapper .count-info-wrap .count-info p {
+  color: var(--black);
   font-size: 14px;
   line-height: 1.2;
   max-width: 150px;
@@ -157,6 +162,11 @@
 }
 .about-secC .heading h3 {
   font-size: 28px;
+}
+@media only screen and (max-width: 540px) {
+  .about-secC .heading h3 {
+    font-size: 24px;
+  }
 }
 .about-secC .aboutJourney-slider {
   max-width: 1100px;
@@ -179,6 +189,7 @@
 @media only screen and (max-width: 540px) {
   .about-secC .aboutJourney-slider .about-journey-pagination {
     overflow-x: auto;
+    justify-content: start;
   }
 }
 .about-secC .aboutJourney-slider .about-journey-pagination .swiper-pagination-bullet {
@@ -217,6 +228,11 @@
   transform: translateX(36%);
   border-bottom: 2px dashed var(--text);
 }
+@media only screen and (max-width: 540px) {
+  .about-secC .aboutJourney-slider .about-journey-pagination .swiper-pagination-bullet:not(:last-child)::before {
+    width: 100%;
+  }
+}
 .about-secC .aboutJourney-slider .about-journey-pagination .swiper-pagination-bullet span.number {
   display: block;
   width: 45px;
@@ -228,6 +244,12 @@
   line-height: 2.5;
   font-family: "ttrg-bd";
   color: var(--text);
+}
+@media only screen and (max-width: 540px) {
+  .about-secC .aboutJourney-slider .about-journey-pagination .swiper-pagination-bullet span.number {
+    width: 40px;
+    height: 40px;
+  }
 }
 .about-secC .aboutJourney-slider .about-journey-pagination .swiper-pagination-bullet span.year {
   font-size: 16px;
@@ -297,6 +319,16 @@
 .about-secC .aboutJourney-slider .about-slider .swiper-slide .item figure, .about-secC .aboutJourney-slider .about-slider .swiper-slide .item figcaption {
   flex: 1;
 }
+@media only screen and (max-width: 540px) {
+  .about-secC .aboutJourney-slider .about-slider .swiper-slide .item figcaption {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .about-secC .aboutJourney-slider .about-slider .swiper-slide .item figcaption .content {
+    padding: 0 20px;
+  }
+}
 .about-secC .aboutJourney-slider .about-slider .swiper-slide .item figcaption .content h5 {
   font-size: 20px;
   line-height: 1.2;
@@ -339,8 +371,14 @@
 }
 @media only screen and (max-width: 540px) {
   .about-secD > .flex .colA h3 {
-    font-size: 30px;
+    font-size: 26px;
     margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .about-secD > .flex .colA button {
+    display: none;
   }
 }
 .about-secD > .flex > .colB {
@@ -405,6 +443,11 @@
 }
 .about-secE .flex .colA, .about-secE .flex .colB {
   flex: 1;
+}
+@media only screen and (max-width: 540px) {
+  .about-secE .flex .colA {
+    text-align: center;
+  }
 }
 .about-secE .flex .colA h3 {
   font-size: 48px;

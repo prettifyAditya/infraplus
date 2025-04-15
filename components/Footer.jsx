@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
 import Image from "next/image"
+import FooterStrip from "./FooterStrip"
 
 
 export default function Footer() {
@@ -99,6 +100,7 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
+        <FooterStrip />
         <div className="overlay" onClick={() => {
             document.querySelector('.ham-pop').classList.remove('is-open')
             document.querySelector('.enquire-pop').classList.remove('is-open')
