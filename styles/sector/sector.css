@@ -16,7 +16,7 @@
 }
 @media only screen and (max-width: 540px) {
   .banner.project-banner .bg {
-    height: 70vh;
+    height: 60vh;
   }
 }
 .banner.project-banner .banner-wrapper .heading {
@@ -299,11 +299,6 @@
   height: 100vh;
 }
 @media only screen and (max-width: 768px) {
-  .banner.sector-banner .bg {
-    height: 130vh;
-  }
-}
-@media only screen and (max-width: 768px) {
   .banner.sector-banner .banner-wrapper {
     bottom: 45%;
   }
@@ -538,11 +533,6 @@
 .banner.prodetails-banner .bg {
   height: 100vh;
 }
-@media only screen and (max-width: 768px) {
-  .banner.prodetails-banner .bg {
-    height: 130vh;
-  }
-}
 @media only screen and (max-width: 991px) {
   .banner.prodetails-banner .banner-wrapper {
     bottom: 30%;
@@ -638,7 +628,7 @@
   .banner.prodetails-banner .banner-wrapper .heading .details li {
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    gap: 5px;
   }
 }
 .banner.prodetails-banner .banner-wrapper .heading .details li svg, .banner.prodetails-banner .banner-wrapper .heading .details li img {

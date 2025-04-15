@@ -17,6 +17,11 @@
 .banner.project-banner .bg {
   height: 100vh;
 }
+@media only screen and (max-width: 540px) {
+  .banner.project-banner .bg {
+    height: 60vh;
+  }
+}
 .banner.project-banner .banner-wrapper .heading {
   text-align: center;
 }

@@ -27,7 +27,7 @@ export default function Sectors() {
     const [activeTab, setActiveTab] = useState("tab1")
     return(
         <main>
-            <div className="banner project-banner center-banner">
+            <div className="banner project-banner sector_banner center-banner">
                 <div className="bg">
                     <video playsInline autoPlay muted loop width="100%" height="100%">
                         <source src="/assets/video/banner-video.mp4" type="video/mp4" />
