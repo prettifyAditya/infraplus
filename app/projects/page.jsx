@@ -5,6 +5,8 @@ import { useEffect ,useState } from 'react';
 import Select from "react-select";
 import enterView from 'enter-view';
 import '../../public/assets/css/animate.css'
+import PageNotFound from '@/components/PageNotFound';
+import NotFound from '@/components/NotFound';
 
 const customStyles = {
   control: (base, state) => ({
@@ -71,26 +73,70 @@ const options2 = [
   { value: "Energy", label: "Energy"},
 ]
 
+const allProjects = [
+  {
+    title: "Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria",
+    desc: "Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone",
+    sector: "Water & Sanitation",
+    location: "India"
+  },
+  {
+    title: "Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria",
+    desc: "Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone",
+    sector: "Water & Sanitation",
+    location: "India"
+  },
+  {
+    title: "Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria",
+    desc: "Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone",
+    sector: "Roads & Highways",
+    location: "Nigeria"
+  },
+  {
+    title: "Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria",
+    desc: "Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone",
+    sector: "Roads & Highways",
+    location: "Nigeria"
+  },
+  {
+    title: "Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria",
+    desc: "Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone",
+    sector: "Roads & Highways",
+    location: "Nigeria"
+  },
+  {
+    title: "Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria",
+    desc: "Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone",
+    sector: "Rail & Metro",
+    location: "Africa"
+  },
+  {
+    title: "Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria",
+    desc: "Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone",
+    sector: "Rail & Metro",
+    location: "Africa"
+  },
+  {
+    title: "Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria",
+    desc: "Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone",
+    sector: "Energy",
+    location: "Oman"
+  },
+
+]
+
 export default function ProjectPage() {
   const [selectedOption, setSelectedOption] = useState(null);
   const [selectedOption2, setSelectedOption2] = useState(null);
   const handleChange = (selectedOption) => {
     setSelectedOption(selectedOption);
-    console.log('Selected:', selectedOption);
+    console.log(selectedOption);
   };  
-  const location = [
-    { value: 'India', label: 'India'},
-    { value: 'Canada', label: 'Canada' },
-    { value: 'United States of America', label: 'United States of America' },
-    { value: 'Mexio', label: 'Mexico' },
-  ]
-  const sectors = [
-    { value: 'Water & Sanitation', label: 'Water & Sanitation' },
-    { value: 'Telecomm', label: 'Telecomm'},
-    { value: 'Roads & Highways', label: 'Roads & Highways' },
-    { value: 'Rail & Metro', label: 'Rail & Metro' },
-    { value: 'Energy', label: 'Energy' },
-  ]
+  const filteredProjects = allProjects.filter(project => {
+    const matchesLocation = selectedOption ? project.location === selectedOption.label : true;
+    const matchesSector = selectedOption2 ? project.sector === selectedOption2.label : true;
+    return matchesLocation && matchesSector;
+  });
   useEffect(() => {
           if(typeof window !== 'undefined' && window.innerWidth > 1007) {
               enterView({
@@ -127,7 +173,7 @@ export default function ProjectPage() {
                         placeholder="Location"
                         options={options}
                         value={selectedOption}
-                        onChange={setSelectedOption}
+                        onChange={handleChange}
                         styles={customStyles}
                         components={{
                             IndicatorSeparator: () => null 
@@ -157,42 +203,23 @@ export default function ProjectPage() {
                   <div className="container">
                       <div className="over-hidden">
                          <div className='listing-grid' data-animate="zoom-out">
-                         <ProjectListing 
-                         title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
-                         desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}
-                         sector={"Highways, Bridges & Tunnels"} />
-                         <ProjectListing 
-                         title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
-                         desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}
-                         sector={"Highways, Bridges & Tunnels"} />
-                         <ProjectListing 
-                         title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
-                         desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}
-                         sector={"Highways, Bridges & Tunnels"} />
-                         <ProjectListing 
-                         title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
-                         desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}
-                         sector={"Highways, Bridges & Tunnels"} />
-                         <ProjectListing 
-                         title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
-                         desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}
-                         sector={"Highways, Bridges & Tunnels"} />
-                         <ProjectListing 
-                         title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
-                         desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}
-                         sector={"Highways, Bridges & Tunnels"} />
-                         <ProjectListing 
-                         title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
-                         desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}
-                         sector={"Highways, Bridges & Tunnels"} />
-                         <ProjectListing 
-                         title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
-                         desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}
-                         sector={"Highways, Bridges & Tunnels"} />
-                         <ProjectListing 
-                         title={"Abuja Kaduna Expressway, Kaduna (1510 Ha), Kaduna, Nigeria"}
-                         desc={"Techno Economic Feasibility Study, Master Planning and Design of Infrastructure Services of Green Agro Allied Economic Zone"}
-                         sector={"Highways, Bridges & Tunnels"} />
+                            {
+                              filteredProjects.length > 0 ? (
+                                filteredProjects.map((project, index) => (
+                                  <ProjectListing
+                                  key={index}
+                                  title={project.title}
+                                  desc={project.desc}
+                                  sector={project.sector}
+                                  />
+                                 ))
+                                 ) : (
+                                  <NotFound
+                                  title="Error"
+                                  desc="No Blogs Found"
+                                  />
+                                 )
+                            }
                          </div>
                       </div>
                       <button className='loadBtn'>

@@ -2,7 +2,7 @@ import '@/styles/components/component.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ProjectListing({ title, desc, sector, src= "/assets/images/projects/project1.jpg" }) {
+export default function ProjectListing({ title, desc, sector, location, src= "/assets/images/projects/project1.jpg" }) {
     return(
         <Link href="/project-details">
             <div className="item item-md projectCard">
